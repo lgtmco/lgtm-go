@@ -28,6 +28,6 @@ maintainers, err := client.Maintainer("octocat/hello-world")
 Activate and de-activate a repository:
 
 ```Go
-err := client.RepoActivate("octocat/hello-world")
-err := client.RepoDeactivate("octocat/hello-world")
+err := client.Activate("octocat/hello-world")
+err := client.Deactivate("octocat/hello-world")
 ```
