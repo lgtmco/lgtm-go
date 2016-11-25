@@ -1,33 +1,5 @@
-Download the package:
+This repository contains an archive of the LGTM client bindings for the Go programming language. This repository is no longer being maintained and is available for historical purposes only.
 
-```
-go get -u github.com/lgtmco/lgtm
-```
+__disclaimer:__
 
-In order to create a client you need to provide your API token. You can get an API token using the command line utility. See [lgtm-cli](https://github.com/lgtmco/lgtm-cli) for detailed instructions.
-
-```Go
-addr := "http://lgtm.co"
-token := "ba945cbb285df8b6bdacb3820c9bf405351acc"
-
-client := lgtm.NewClientToken(addr, token)
-```
-
-Get a list of repositories:
-
-```Go
-repos, err := client.Repos()
-```
-
-Get a repository maintainers file:
-
-```Go
-maintainers, err := client.Maintainer("octocat/hello-world")
-```
-
-Activate and de-activate a repository:
-
-```Go
-err := client.Activate("octocat/hello-world")
-err := client.Deactivate("octocat/hello-world")
-```
+LGTM is a trademark of Semmle, Ltd (www.lgtm.com). The use of the LGTM mark and name on this page shall not imply any affiliation with or endorsement by Semmle, Ltd.
